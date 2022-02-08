@@ -1,0 +1,102 @@
+/*  Fundo da tela */
+
+body {
+    background-color: rgb(0, 0, 0); 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 1px;
+    display: inline-block;
+}
+
+
+/* titulo */
+
+
+.card{
+    width: 550px;
+    height: 750px;
+    position: relative;
+    display: inline-block;
+    left: 27%;
+    right: 35%;
+    top: 50%;
+    bottom: -550px;
+    margin-right: 15px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 35px 60px rgba(51, 3, 3, 0.6);
+    overflow: hidden;
+    background-color: #04212c;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: relative;
+
+}
+h3{
+    background-color: #04212c;
+    width: 35%;
+    position: absolute;
+    bottom: -4px;
+    right: -250%;
+    padding: 10px 1;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-weight: 600px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform: skew(-0deg);
+    transition: 0.5s;
+}
+
+h5{
+    background-color: #04212c;
+    width: 35%;
+    padding: 10px 1;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    letter-spacing: 0.5px;
+    position: absolute;
+    right: -85%;
+    bottom: -17px;
+    transform: skew(-0deg);
+    transition: 0.5s;
+}
+
+.card:hover h3{
+    right: 59.5%;
+}
+.card:hover h5 {
+    right: 5.5%;
+}
+.card:hover img{
+    transform: scale(1.05);
+    filter: contrast(180%);
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, gold, deeppink) 1;
+    clip-path: inset(-2px round 8px);
+    animation: huerotate 3s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* titulo */
+
+
